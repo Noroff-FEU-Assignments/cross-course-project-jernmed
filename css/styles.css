@@ -1,0 +1,65 @@
+h1 {
+    font-size: 18px;
+    color: blue;
+}
+
+img {
+    max-width: 300px;
+    float: left;
+    margin-right: 15px;
+}
+.raindrop {
+    max-width: 300px;
+    float: right;
+    margin-right: 15px;
+}
+
+nav,
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+}
+
+#menu-checkbox {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header {
+    position: relative;
+    background: rgb(66, 64, 64);
+    color: #fff;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+nav {
+    position: absolute;
+    background: rgb(109, 105, 105);
+    left: 0px;
+}
+
+nav a {
+    display:block;
+    color: #000
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+    nav {
+        display: block;
+        position: static;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+}
