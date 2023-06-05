@@ -63,3 +63,8 @@ nav a {
         display: inline-block;
     }
 }
+
+#copyright {
+    display: flex;
+    justify-content: baseline;
+}
