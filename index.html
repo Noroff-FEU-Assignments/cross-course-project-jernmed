@@ -4,36 +4,161 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rainydays</title>
-    <link href="css/styles.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b7dbda6817.js" crossorigin="anonymous"></script>
+    <title>Jerico Project</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
 </head>
 <body>
+    <!-- <%--SECTION1--%> -->
+    <section id="hero" style="height:auto;"> 
     <header>
-        <input type="checkbox" id="menu-checkbox"/>
-        <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
+        <img style="padding:1rem;" height="80" width="90" src="images/RainyDays_logo.png" />
         <nav>
-            <ul>
-                <li><a href="mens.html">Mens</a></li>
-                <li><a href="womens.html">Womens</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-                <li><a href="about.html">About</a></li>
+             <ul>
+                 <li><a href="about.html">ABOUT</a></li>
+                 <li><a href="/contactus">CONTACT US</a></li>
+                 <li><a href="/collection">OUR COLLECTIONS</a></li>
+                 <li><a href="/store">STORE LOCATOR</a></li>            
+                 <li><a href="#">RainyDay<span>REWARDS</span> Account</a></li>
+                  <li><i style="color:black" class="bi bi-cart3"></i><a href="#"></a></li>
             </ul>
         </nav>
-        <h1>HOME</h1>
-        <img src="images/RainyDays_logo.png" alt="rainydays logo">
-        <img src="images/rain.jpg" alt="raindrops background" class="raindrop">   
+        <div style="display:flex;gap:4px;">
+    
+         <div id="cart-icon" onclick="toggleMobileMenu2(this)">
+             <i style="font-size:1.6rem;" class="bi bi-cart3"></i>
+         </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+             <div class="bar2"></div>
+             <div class="bar3"></div>
+            <ul class="mobile-menu">
+                 <li><a href="about.html">ABOUT</a></li>
+                 <li><a href="/contactus">CONTACT US</a></li>
+                 <li><a href="/collection">OUR COLLECTIONS</a></li>
+                 <li><i class="bi bi-geo-alt"></i><a href="/store" style="font-size:small">Store Locator</a></li>
+                 <li><i class="bi bi-person"></i><a href="#" style="font-size:small">Rainyday<span style="font-size:medium;font-weight:bold">REWARDS</span><i class="bi bi-tags"></i>Account</a></li>
+            </ul>
+        </div>
+                </div>
     </header>
-    <main>
-        <h2>Conquering boundaries for decades<br>
-            Design and Quality uniquely made for you.
-        </h2>
-        <img src="images/people-2590300_1920.jpg" alt="a man facing the mountain">
-        <img src="images/people-2591874_1920.jpg" alt="a woman facing the mountain">
-        <img src="images/sale box.jpg" alt="sale logo">
-        <footer class="copyright">
-            copyright &copy; 2023
-        </footer>
-    </main>
+        <div id="pushing-div" style="display:block;align-items:center;justify-content:center;padding:7rem;text-align:center">
+            <h1 style="color:black;text-shadow: 4px 3px 6px rgba(0,0,0,0.6);">PUSHING THE COMFORT ZONE</h1>
+            <br />
+            <div>
+                 <p style="color:black">Conquering Boundaries for Decades, Design and Quality uniquily made for you</p>
+                <button style="background:#F15845;border:none;border-radius:5px;padding:1rem;letter-spacing:3px;color:white;margin-top:1rem;box-shadow: 5px 7px 5px 3px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 5px 7px 5px 3px rgba(0,0,0,0.53);">SHOP NOW</button>
+            </div>
+        </div>
+            </section> 
+        <!--     <%--SECTION2--%> -->
+            <section id="hero2" style="height: auto">
+                <div class="banner" style="display:flex;justify-content:center;padding:1rem">
+                    <img style="width: 80%;height: 40%;" src="images/Skjermbilde 2023-04-25 185616.png" />
+                </div>
+                 <div class="slider">
+                     </div>
+            </section>
+           <!--    <%--SECTION3--%> -->
+            <section id="hero3" style="height:auto">
+                <div style="display:flex;gap:3px;">        
+                <div class="card">
+                  <img src="images/people-2591874_1920.jpg" alt="Avatar" style="width:100%;    display:flex;
+        align-items:center;
+        justify-content:center;"/>
+                  <div style="text-align:center;margin-top:.9rem">
+                        <a style="padding:.4rem;background:#F15845;color:white;border-radius:3px;" href="mens.html">Men's</a>
+                  </div>
+                </div>
+                 <div class="card">
+                  <img src="images/people-2590300_1920.jpg" alt="Avatar" style="width:100%"/>
+                <div style="text-align:center;margin-top:.5rem">
+                        <a style="padding:.4rem;background:#F15845;color:white;border-radius:3px;" href="womens.html">Women's</a>
+                  </div>
+                </div>
+                 <div class="card">
+                  <img src="images/sale-g4c755aa47_1280.jpg" alt="Avatar" style="width:100%"/>
+                  <div style="text-align:center;margin-top:.5rem">
+                        <a style="padding:.4rem;background:#F15845;color:white;border-radius:3px;" href="mens.html">Sale</a>
+                  </div>
+                </div>
+                       </div>
+            </section>
+                    <!--   <%--SECTION4--%> -->
+            <section id="hero4" style="height:auto">
+                <div style="display:block">
+                <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:auto;padding-top:1rem;padding-bottom:1rem;height:auto">
+          <p style="color:black"><img class="float-img1" src="image/pexels-give-a-shit-bali-5526307.jpg" alt="Pineapple" style="width:270px;height:270px;margin-right:15px;border: 3px solid black;"/><span style="margin-bottom:1rem">
+    The utilization of sustainable and responsibly sourced timber, along with environmentally friendly adhesives and finishes, in furniture production ensures the preservation of forests, reduces carbon emissions, and promotes the longevity and recyclability of furniture, thus minimizing waste and promoting a circular economy.</span></p> 
+                </div>
+           <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:auto;padding-top:1rem;padding-bottom:1rem;height:auto">
+          <p style="color:black"><img class="float-img2" src="image/pexels-ready-made-3850512.jpg" alt="Pineapple" style="width:270px;height:270px;margin-right:15px;border: 3px solid black;"/><span style="margin-bottom:1rem">
+    At our core, we firmly believe in the values of responsible consumerism and actively support the use of earth-friendly products. From our selection of sustainable materials like organic cotton, recycled plastics, and renewable resources, to our commitment to ethical production practices, we strive to offer products that align with our vision of a greener future. By promoting these earth-friendly alternatives, we aim to inspire individuals to make conscious choices that reduce their environmental impact and contribute to the preservation of our planet's precious resources. Through our belief in responsible and sustainable practices, we endeavor to create a positive change and be a catalyst for a more eco-conscious society.</span></p> 
+                </div>
+              <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:auto;padding-top:1rem;padding-bottom:1rem;height:auto">
+          <p style="color:black"><img class="float-img3" src="image/Skjermbilde%202023-04-22%20164626.png" alt="Pineapple" style="width:270px;height:270px;margin-right:15px;border: 3px solid black;"/><span style="margin-bottom:1rem">
+    For every purchase made, we are proud to contribute 5% back to the World Wildlife Fund (WWF), a leading organization dedicated to the conservation and protection of our planet's incredible biodiversity. This initiative allows us to actively support the invaluable work of the WWF in preserving endangered species, protecting natural habitats, and promoting sustainable practices worldwide. By partnering with the WWF and pledging a percentage of our sales, we aim to make a meaningful difference and encourage our customers to join us in safeguarding the wonders of our natural world for generations to come..</span><br /><a href="#" style="border:1px solid black;border-radius:4px;color:black;font-weight:bold;padding:3px;">Find out more</a></p> 
+                </div>
+            </div>
+            </section>
+           <!--   <%--SECTION5--%> -->
+            <section id="hero5" style="height:auto" > 
+                 <div class="banner" style="display:flex;justify-content:center;padding:1rem; position: relative;
+      text-align: center;
+      color: white;">
+                    <img style="width: 80%;height: 70%;" src="image/luca-calderone--Mye1bLxoj4-unsplash.jpg" />
+                      <div class="centered">OUR COLLECTION</div>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:center;color:black">
+                    <div style="display:block;align-items:center;justify-content:center;color:black">
+                      <div style="align-items:center;justify-content:center;color:black;text-align:center">
+                         <p>Rainyday<span style="font-weight:bold">REWARDS<i style="font-weight:bold" class="bi bi-tags"></i></span></p>
+                            </div>              
+                              <div>
+                                    <p>Sign up and collect points for every purchase</p>
+                              </div>
+                            </div>            
+                </div>
+           </section>        
+            <!--  <%--SECTION6--%> -->
+            <section id="hero6" style="height:auto"> 
+                <div style="padding-left:6rem;padding-right:6rem;width: auto;">
+                    <h5>CONNECT WITH US</h5>
+                    <p>Subscribe and be the first to hear about new product,sales and more.</p>
+                    <div style="display:flex;margin-top:.3rem">                    
+                    <input type="email" placeholder="Enter your email" style="padding:.5em"/>
+                    <button style="width:4rem"><i style="font-size:1.5rem" class="bi bi-arrow-right-circle-fill"></i></button>
+                    </div>
+                    <p>By signing up, you agree to our <span style="text-decoration:underline">Terms of us</span> and <span style="text-decoration:underline">Privac Policy</span></p>
+                </div>      
+            </section>
+             <section id="hero7" style="height:auto"> 
+                 <div id="main" style="color:black">
+                      <div><a href="#"><i style="font-size:2rem" class="bi bi-facebook"></i></a></div>
+                      <div><a href="#"><i style="font-size:2rem" class="bi bi-linkedin"></i></a></div>
+                      <div><a href="#"><i style="font-size:2rem;color:pink;" class="bi bi-instagram"></i></a></div>
+                     <div><a href="#"><i style="font-size:2rem;color: red;" class="bi bi-youtube"></i></a></div>
+                     <div><a href="#"><i style="font-size:2rem;color:aqua" class="bi bi-twitter"></i></a></div>
+                </div>
+                 <div style="padding-left:3rem;text-align: center;">
+                     <p style="color:black">© 2009 - 2023 Rainydays Company, Oslo,Norway.All right reserved.</p>
+                     <a style="color:black;text-decoration:underline" href="#">Give us Feedback</a>
+                 </div>
+                  <div id="main2" style="color:black;margin-top:.4rem">
+                      <div><a style="color:black;font-weight:bold" href="#">Terms of us</a></div>
+                      <div><a style="color:black;font-weight:bold" href="#">Privacy Policy</a></div>
+                      <div><a style="color:black;font-weight:bold" href="#">Cookies</a></div>
+                </div>
+             </section>
+             <script src="jscript/JavaScript.js"></script>
 </body>
 </html>
